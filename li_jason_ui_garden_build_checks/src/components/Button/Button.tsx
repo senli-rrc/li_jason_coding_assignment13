@@ -5,7 +5,7 @@ import { ButtonProps } from "./Button.types";
 interface StyledButtonProps {
   $backgroundColor?: string;
   $disabled?: boolean;
-  // Additional props
+  // test
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
