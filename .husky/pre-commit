@@ -3,3 +3,4 @@
 
 npx lint-staged --allow-empty
 set CI=true && npm test
+# This script is run before a commit is made.
