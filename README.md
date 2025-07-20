@@ -13,13 +13,13 @@ This project is a comprehensive UI component library built with React, TypeScrip
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/senli-rrc/li_jason_coding_assignment12.git
-   cd li_jason_coding_assignment12
+   git clone https://github.com/senli-rrc/li_jason_coding_assignment13.git
+   cd li_jason_coding_assignment13
    ```
 
 2. **Install dependencies**
    ```bash
-   cd li_jason_ui_garden
+   cd li_jason_ui_garden_build_checks
    npm install --legacy-peer-deps
    ```
 
@@ -27,7 +27,7 @@ This project is a comprehensive UI component library built with React, TypeScrip
    ```bash
    npm run storybook
    ```
-   This will start Storybook on `http://localhost:8083`
+   This will start Storybook on `http://localhost:8013`
 
 4. **Run tests**
    ```bash
@@ -40,29 +40,29 @@ For local development with Docker Compose (includes hot reload):
 
 1. **Start the development environment**
    ```bash
-   docker-compose -f docker-compose.dev.yml up
+   docker-compose -f docker-compose.yml up
    ```
    This will:
    - Build the development Docker image
    - Start Storybook with hot reload
    - Mount your local source code for live editing
-   - Make Storybook available at `http://localhost:8083`
+   - Make Storybook available at `http://localhost:8013`
 
 2. **Stop the development environment**
    ```bash
-   docker-compose -f docker-compose.dev.yml down
+   docker-compose -f docker-compose.yml down
    ```
 
 3. **Rebuild after dependency changes**
    ```bash
-   docker-compose -f docker-compose.dev.yml up --build
+   docker-compose -f docker-compose.yml up --build
    ```
 4. **Build a production**
    ```bash
-   docker build -t li_jason_coding_assignment12 .
+   docker build -t li_jason_coding_assignment13 .
    ```
 
 5. **Run the Image**
    ```bash
-   docker run -p 8083:8083 li_jason_coding_assignment12
+   docker run -p 8013:8013 li_jason_coding_assignment13
    ```
