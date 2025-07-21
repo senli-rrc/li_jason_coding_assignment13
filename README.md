@@ -2,7 +2,7 @@
 
 This project is a comprehensive UI component library built with React, TypeScript, styled-components, and Storybook. It provides a collection of reusable, responsive, and accessible components that can be used across different projects.
 
-## 📦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -41,8 +41,9 @@ This project is a comprehensive UI component library built with React, TypeScrip
 ### Implement Pre-commit checks
 
 This section outlines how to implement pre-commit checks using Husky, lint-staged, Prettier, and ESLint to ensure code quality before commits.
+Make sure you are in the li_jason_coding_assignment13 directory.
 
-#### 📦 Step 1: Install the Necessary Dependencies
+#### Step 1: Install the Necessary Dependencies
 
 Use one of the following commands depending on your package manager:
 
@@ -58,7 +59,7 @@ npm install --save-dev husky lint-staged prettier eslint eslint-config-prettier 
 yarn add --dev husky lint-staged prettier eslint eslint-config-prettier eslint-plugin-prettier
 ```
 
-#### 🛠 Step 2: Initialize Husky
+#### Step 2: Initialize Husky
 
 Set up Husky to enable Git hooks in your project.
 
@@ -80,7 +81,7 @@ This will:
 - Add a sample pre-commit hook
 - Update your `package.json` with a "prepare" script
 
-#### ✅ Step 3: Create a Pre-commit Hook
+#### Step 3: Create a Pre-commit Hook
 
 Add a new pre-commit hook that runs lint-staged:
 
@@ -88,7 +89,7 @@ Add a new pre-commit hook that runs lint-staged:
 npx husky add .husky/pre-commit "npx lint-staged"
 ```
 
-This creates a `.husky/pre-commit` file with the following content:
+This creates a `.husky/pre-commit` file and modify as the following content:
 
 ```bash
 #!/usr/bin/env sh
@@ -98,61 +99,7 @@ npx lint-staged --allow-empty
 set CI=true && npm test
 ```
 
-#### ⚙️ Step 4: Configure lint-staged
-
-Add the following configuration to your `package.json`:
-
-```json
-{
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": ["prettier --write", "eslint --fix"]
-  }
-}
-```
-
-#### 🎨 Step 5: Configure Prettier
-
-Create a `.prettierrc.json` file in your project root:
-
-```json
-{
-  "semi": true,
-  "singleQuote": true,
-  "printWidth": 120,
-  "trailingComma": "es5"
-}
-```
-
-#### 🔍 Step 6: Configure ESLint
-
-Create an `eslint.config.js` file for TypeScript support:
-
-```javascript
-import typescriptParser from "@typescript-eslint/parser";
-import typescriptPlugin from "@typescript-eslint/eslint-plugin";
-
-export default [
-  {
-    files: ["**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      parser: typescriptParser,
-      parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-      },
-    },
-    plugins: {
-      "@typescript-eslint": typescriptPlugin,
-    },
-    rules: {
-      "@typescript-eslint/no-unused-vars": "warn",
-      "@typescript-eslint/explicit-function-return-type": "off",
-    },
-  },
-];
-```
-
-#### 🚀 Step 7: Test Your Setup
+#### Step 4: Test Your Setup
 
 1. **Make a change** to any file
 2. **Stage the changes**: `git add .`
@@ -180,7 +127,7 @@ npm test
 git commit -m "your message" --no-verify
 ```
 
-### 🐳 Docker Compose Development
+### Docker Compose Development
 
 For local development with Docker Compose (includes hot reload):
 
