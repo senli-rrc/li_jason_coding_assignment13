@@ -1,8 +1,8 @@
 # React + Storybook UI Component Library
 
-[![Continuous Integration](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/ci.yml/badge.svg)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/ci.yml)
-[![Pull Request Checks](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/pr-checks.yml/badge.svg)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/pr-checks.yml)
-[![Security Monitoring](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/security-monitoring.yml/badge.svg)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/security-monitoring.yml)
+[![CI Status](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/ci.yml)
+[![PR Checks](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/pr-checks.yml/badge.svg?branch=main)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/pr-checks.yml)
+[![Security Audit](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/security-monitoring.yml/badge.svg?branch=main)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/security-monitoring.yml)
 
 This project is a comprehensive UI component library built with React, TypeScript, styled-components, and Storybook. It provides a collection of reusable, responsive, and accessible components that can be used across different projects.
 
