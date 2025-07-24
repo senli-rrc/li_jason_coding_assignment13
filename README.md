@@ -1,6 +1,21 @@
 # React + Storybook UI Component Library
 
+[![Continuous Integration](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/ci.yml/badge.svg)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/ci.yml)
+[![Pull Request Checks](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/pr-checks.yml/badge.svg)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/pr-checks.yml)
+[![Security Monitoring](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/security-monitoring.yml/badge.svg)](https://github.com/senli-rrc/li_jason_coding_assignment13/actions/workflows/security-monitoring.yml)
+
 This project is a comprehensive UI component library built with React, TypeScript, styled-components, and Storybook. It provides a collection of reusable, responsive, and accessible components that can be used across different projects.
+
+## 🚀 Build Status & Quality Checks
+
+This repository includes comprehensive CI/CD workflows that ensure code quality and prevent broken builds:
+
+- **✅ Continuous Integration**: Runs on every push and PR, includes linting, testing, and build verification
+- **✅ Pull Request Checks**: Additional validation for PRs including commit message linting and bundle size analysis
+- **✅ Security Monitoring**: Weekly dependency audits and license compliance checks
+- **✅ Pre-commit Hooks**: Local validation using Husky and lint-staged to catch issues before they reach GitHub
+
+If any of these checks fail, the build will be marked as failed and contributors will be notified to fix the issues before merging.
 
 ## Getting Started
 
