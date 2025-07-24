@@ -1,6 +1,5 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { expect, userEvent, within } from "@storybook/test";
+import { expect, within } from "@storybook/test";
 import { TableRow } from "./TableRow";
 
 const meta: Meta<typeof TableRow> = {
@@ -75,7 +74,6 @@ export const Default: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const row = canvas.getByRole("row");
-    const cells = canvas.getAllByRole("cell");
 
     await expect(row).toBeVisible();
   },

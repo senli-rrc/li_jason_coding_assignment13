@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { Table, TableHeader, TableRow, TableCell, TableFooter } from "./Table";
+import { Table, TableHeader, TableRow, TableCell } from "./Table";
 
 describe("Table component", () => {
   test("renders table with content", () => {

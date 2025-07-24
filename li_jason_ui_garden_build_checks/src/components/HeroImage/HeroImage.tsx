@@ -124,7 +124,6 @@ export const HeroImage: React.FC<HeroImageProps> = ({
   textColor = "white",
   onClick,
   children,
-  ...props
 }) => {
   const handleClick = () => {
     if (!disabled && onClick) {
