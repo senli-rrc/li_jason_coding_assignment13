@@ -58,7 +58,7 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            
+
             let issueBody = '## 🚨 Security Vulnerabilities Detected\n\n';
             issueBody += 'The weekly dependency audit has found security vulnerabilities in the project.\n\n';
             issueBody += '### Action Required\n';

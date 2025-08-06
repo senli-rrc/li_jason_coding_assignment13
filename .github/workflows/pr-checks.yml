@@ -46,7 +46,7 @@ jobs:
   pr-validation:
     runs-on: ubuntu-latest
     name: PR Validation
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -75,23 +75,23 @@ jobs:
       - name: Check for common issues
         run: |
           echo "Checking for common code issues..."
-          
+
           # Check for console.log statements (warning only)
           if grep -r "console\.log" src/ --include="*.ts" --include="*.tsx" --include="*.js" --include="*.jsx" 2>/dev/null; then
             echo "⚠️ Warning: Found console.log statements in source code"
           fi
-          
+
           # Check for TODO/FIXME comments
           if grep -r "TODO\|FIXME" src/ --include="*.ts" --include="*.tsx" --include="*.js" --include="*.jsx" 2>/dev/null; then
             echo "ℹ️ Info: Found TODO/FIXME comments"
           fi
-          
+
           # Check for .only in test files (should fail the build)
           if grep -r "\.only\|fdescribe\|fit" src/ --include="*.test.*" --include="*.spec.*" 2>/dev/null; then
             echo "❌ Error: Found .only, fdescribe, or fit in test files"
             exit 1
           fi
-          
+
           echo "✅ Code quality checks completed"
 
   # Size impact analysis
@@ -139,7 +139,7 @@ jobs:
             });
 
             const labels = new Set();
-            
+
             for (const file of files) {
               if (file.filename.includes('.test.') || file.filename.includes('.spec.')) {
                 labels.add('tests');
